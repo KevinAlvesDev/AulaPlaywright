@@ -6,5 +6,4 @@ test('Acessar Segurança e Privacidade no UOL', async ({ page }) => {
   await expect(page).toHaveTitle('Normas de Segurança e Privacidade - Sobre UOL');
   const validar = await page.getByText('Atualização:');
   await expect(validar).toBeVisible();
-  await page.pause();
 });
